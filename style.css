@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800&family=Montserrat:wght@500;700&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800&family=Montserrat:wght@500;700&display=swap"); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin-top: 10%;
+    margin-right: 30%;
+    margin-left: 30%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+main {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+}
+main img {
+    width: 100%;
+    height: 100%;
+}
+.description {
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.description h5 {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 3px;
+    opacity: 50%;
+}
+.description h1 {
+    font-family: "Fraunces", serif;
+    font-size: 36px;
+}
+.description {
+    padding: 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+.prices {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+p {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    opacity: 50%;
+}
+.prices h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+.prices p {
+    font-family: "Fraunces", serif;
+    text-decoration: line-through;
+    opacity: 50%;
+}
+.description button {
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: #0f5c1f;
+    border: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.add-to-cart img {
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+}
+@media screen and (max-width: 1238px) {
+    body {
+        margin: 2%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .image-container img {
+        max-height: 40vh;
+    }
+}
